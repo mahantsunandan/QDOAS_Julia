@@ -10,6 +10,7 @@ authors:
     email: sunandanmahant@outlook.com
 version: 0.1.0
 license: BSD-3-Clause
+repository-code: https://github.com/mahantsunandan/QDOAS_Julia
 abstract: >-
   A Julia port of the spectral analysis core of QDOAS (BIRA-IASB and S[&]T): reads
   QDOAS project files and MFC STD spectra, performs QDOAS's optical-density DOAS fit

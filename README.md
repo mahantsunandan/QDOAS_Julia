@@ -92,7 +92,7 @@ as well as this repository.
 **2. Get QDOASJulia:**
 
 ```bash
-git clone https://github.com/<your-account>/QDOAS_Julia.git
+git clone https://github.com/mahantsunandan/QDOAS_Julia.git
 cd QDOAS_Julia
 ```
 
