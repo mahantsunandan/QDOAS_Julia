@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: QDOASJulia
+message: >-
+  If you use QDOASJulia, please cite it and, above all, QDOAS, whose analysis it
+  reproduces (see "references").
+type: software
+authors:
+  - given-names: Sunandan
+    family-names: Mahant
+    email: sunandanmahant@outlook.com
+version: 0.1.0
+license: BSD-3-Clause
+abstract: >-
+  A Julia port of the spectral analysis core of QDOAS (BIRA-IASB and S[&]T): reads
+  QDOAS project files and MFC STD spectra, performs QDOAS's optical-density DOAS fit
+  with results identical to QDOAS to floating-point precision, and writes QDOAS-layout
+  NetCDF. Includes a command-line tool, a Julia API and a local web GUI.
+references:
+  - type: software
+    title: QDOAS trace gas retrieval software
+    version: 3.7.13
+    authors:
+      - family-names: Fayt
+        given-names: Caroline
+      - family-names: Danckaert
+        given-names: Thomas
+      - family-names: Van Roozendael
+        given-names: Michel
+      - family-names: Vlietinck
+        given-names: Jonas
+    publisher:
+      name: Royal Belgian Institute for Space Aeronomy (BIRA-IASB)
+    doi: 10.18758/oqvqk2j3
+    repository-code: https://github.com/UVVIS-BIRA-IASB/qdoas
+    license: BSD-3-Clause
