@@ -45,8 +45,9 @@ from Zenodo:
   instrument software);
 * the spectra were written in the MFC STD text format that QDOAS reads, with the elevation
   angle, the solar zenith angle, the number of scans and the exposure time from the data
-  set's `LiveInfo` files, and the ship's position from its GPS files; the last header line
-  of each file names the original file;
+  set's `LiveInfo` files, and the ship's position from its GPS files (which give it in
+  degrees and minutes, converted to decimal degrees); the last header line of each file
+  names the original file;
 * the wavelength column, identical in every file, was written once to the calibration file.
 
 ## What `prepare.jl` does (`work/`, not in the repository)

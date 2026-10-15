@@ -12,8 +12,8 @@ https://creativecommons.org/licenses/by/4.0/
 Changes: the 19 optical-fibre columns of each spectrum were summed into one spectrum; the
 spectra were rewritten in the MFC STD text format with header information (times, elevation
 angle, solar zenith angle, scans, exposure time) from the data set's LiveInfo files and the
-ship's position from its GPS files; the per-pixel wavelengths were written once to
-calibration/ace_uv_instrument.clb. The counts are unchanged. The conversion is
+ship's position from its GPS files (converted from degrees and minutes to decimal degrees);
+the per-pixel wavelengths were written once to calibration/ace_uv_instrument.clb. The counts are unchanged. The conversion is
 ../tools/fetch_ace_spectra.py; see ../README.md.
 
 The data set's authors are not associated with QDOASJulia and do not endorse it.

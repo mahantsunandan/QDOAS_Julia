@@ -73,8 +73,9 @@ laboratory data and are not measurements.
 licensed under the Creative Commons Attribution 4.0 International license
 (<https://creativecommons.org/licenses/by/4.0/>). Changes: the 19 fibre columns of each
 spectrum were summed, the spectra were rewritten in the MFC STD format with header
-information taken from the data set's LiveInfo and GPS files, and the wavelength calibration
-was written to a separate file (details in `examples/ace_maxdoas/README.md`; the conversion
+information taken from the data set's LiveInfo and GPS files (the positions converted from
+degrees and minutes to decimal degrees), and the wavelength calibration was written to a
+separate file (details in `examples/ace_maxdoas/README.md`; the conversion
 is `examples/ace_maxdoas/tools/fetch_ace_spectra.py`). The data set's authors are not
 associated with QDOASJulia and do not endorse it. These files are covered by CC BY 4.0, not by
 QDOASJulia's BSD license.

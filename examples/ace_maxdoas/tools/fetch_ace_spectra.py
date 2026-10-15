@@ -84,6 +84,12 @@ def hms(v):
     return v // 10000, (v // 100) % 100, v % 100
 
 
+def degrees(dm):
+    """The GPS files give positions as degrees.minutes (40.01452 is 40 deg 01.452 min)."""
+    d = int(abs(dm))
+    return math.copysign(d + (abs(dm) - d) * 100 / 60, dm)
+
+
 def gps_track():
     with urllib.request.urlopen(RECORD.format("ace_maxdoas_gps.zip")) as r:
         z = zipfile.ZipFile(io.BytesIO(r.read()))
@@ -93,7 +99,7 @@ def gps_track():
         f = line.strip().rstrip(",").split(",")
         if len(f) >= 3:
             h, m, s = hms(f[0])
-            track.append((h * 3600 + m * 60 + s, float(f[1]), float(f[2])))
+            track.append((h * 3600 + m * 60 + s, degrees(float(f[1])), degrees(float(f[2]))))
     return sorted(track)
 
 
